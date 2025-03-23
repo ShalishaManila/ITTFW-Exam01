@@ -2,6 +2,7 @@
 @use 'fonts';
 
 @import 'navbar';
+@import 'footer';
 
 body {
     font-family: fonts.$josefin;
@@ -132,3 +133,191 @@ header {
 
 }
 
+// SECOND SECTION CSS 
+
+.searchplaces {
+    background-color: colors.$dark-color;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .cards {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        i,
+        h2 {
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+}
+
+// THIRD SECTION CSS
+
+.thirdsection {
+    background-image: url(../images/img-house.png);
+    background-size: cover;
+    height: 685px;
+    display: flex;
+    align-items: center;
+
+    .card {
+        height: 371px;
+        width: 540px;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #232323ab;
+        padding-left: 20px;
+
+        .cardcontent {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .btn_book {
+            height: 40px;
+            width: 30%;
+            color: colors.$light-color;
+            background-color: colors.$main-color;
+            border: none;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+
+// FOURTH SECTION CSS
+
+.fourthsection {
+    background-image: url(../images/img-landscape.png);
+    background-size: cover;
+    height: 685px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .card {
+        height: 371px;
+        width: 540px;
+        margin-right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #232323ab;
+        padding-left: 20px;
+
+        .cardcontent {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .btn_book {
+            height: 40px;
+            width: 30%;
+            color: colors.$light-color;
+            background-color: colors.$main-color;
+            border: none;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+
+// FIFTH SECTION CSS
+
+.fifthsection {
+    background-image: url(../images/img-tourist.png);
+    background-size: cover;
+    height: 685px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 5%;
+    }
+
+    .card {
+        display: flex;
+        width: 65%;
+        align-items: center;
+
+        .cardcontent {
+            display: flex;
+            height: 100%;
+            padding-left: 5%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: colors.$dark-color;
+            line-height: 1.5;
+
+            .quote {
+                font-size: 36px;
+                color: colors.$main-color;
+            }
+        }
+    }
+}
+
+
+// FOOTER SECTION CSS
+
+footer {
+    background-color: colors.$dark-color;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+
+    p {
+        line-height: 2;
+        letter-spacing: 5px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 5px;
+        }
+    }
+}
