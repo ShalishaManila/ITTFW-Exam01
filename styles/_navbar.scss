@@ -7,10 +7,9 @@
     align-items: center;
     justify-content: space-between;
 
-    h1 {
+    h3 {
         margin-left: 5%;
         width: 40%;
-        font-size: 24px;
     }
 
     .navbar {
@@ -22,11 +21,41 @@
             justify-content: space-around;
 
             li>a {
-                font-size:14px;
+                font-size: 14px;
                 text-decoration: none;
                 color: colors.$light-color;
+            }
+            li>a:hover{
+                text-decoration: underline;
+                color:colors.$dark-color;
             }
         }
     }
 
+}
+
+.burgernav {
+    display: none;
+    margin-right: 5%;
+
+    a>i {
+        color: colors.$light-color;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        display: none;
+    }
+
+    .burgernav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #myNav>.navbar>ul>li>a {
+        font-size: 10px;
+    }
 }
